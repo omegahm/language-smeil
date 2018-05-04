@@ -1,6 +1,6 @@
 {
   "name": "language-smeil",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Mads Ohm Larsen <ohm@nbi.ku.dk>",
   "description": "SMEIL grammar",
   "keywords": [
