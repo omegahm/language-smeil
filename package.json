@@ -1,0 +1,15 @@
+{
+  "name": "language-smeil",
+  "version": "0.0.0",
+  "author": "Mads Ohm Larsen <ohm@nbi.ku.dk>",
+  "description": "SMEIL grammar",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/omegahm/language-smeil",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

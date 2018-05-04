@@ -1,0 +1,68 @@
+# If this is your first time writing a language grammar, check out:
+#   - http://manual.macromates.com/en/language_grammars
+
+'scopeName': 'source.smeil'
+'name': 'SMEIL'
+'fileTypes': [
+  'sme'
+]
+'patterns': [
+  {
+    'comment': 'SMEIL keywords'
+    'match': '\\b(as|barrier|break|bus|case|default|elif|else|enum|for|from|func|generate|if|import|instance|network|of|proc|range|return|simulation|switch|to|var|where|const)\\b'
+    'name': 'keyword.control.smeil'
+  }
+  {
+    'comment': 'SMEIL properties'
+    'match': '\\b(sync|async|exposed|unique|len)\\b'
+    'name': 'keyword.other.smeil'
+  }
+  {
+    'comment': 'SMEIL comments'
+    'match': '//.*'
+    'name': 'comment.line.smeil'
+  }
+  {
+    'comment': 'SMEIL booleans'
+    'match': '\\b(true|false)\\b'
+    'name': 'constant.language.boolean.smeil'
+  }
+  {
+    'comment': 'SMEIL strings'
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.smeil'
+    'comment': 'string literal with "" delimitors'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.smeil'
+    'name': 'string.quoted.smeil'
+  }
+  {
+    'comment': 'SMEIL assignment operator'
+    'match': '='
+    'name': 'keyword.operator.assignment.smeil'
+  }
+  {
+    'comment': 'SMEIL comparison operator'
+    'match': '==|<|<=|>|>=|!='
+    'name': 'keyword.operator.assignment.smeil'
+  }
+  {
+    'comment': 'SMEIL arithmetic operator'
+    'match': '%|&|\\*\\*|\\*|\\+|-|/'
+    'name': 'keyword.operator.assignment.smeil'
+  }
+  {
+    'comment': 'SMEIL numerics'
+    'match': '\\b(\\d+(\\.\\d+)?)\\b'
+    'name': 'constant.numeric.smeil'
+  }
+  {
+    'comment': 'SMEIL types'
+    'match': '(?<=(:\\s))(u?int|f32|f64|i\\d+|u\\d+|boolean)'
+    'name': 'storage.type.smeil'
+  }
+]
