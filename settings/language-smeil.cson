@@ -3,4 +3,4 @@
 
 '.source.smeil':
   'editor':
-    'commentStart': '# '
+    'commentStart': '// '
